@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script type="text/javascript">
+	function Select(e) {
+		var Url = "http://192.168.0.13:8060/keypress/select";
+		var xhr = new XMLHttpRequest();
+		xhr.open('POST', Url, true);
+		xhr.send();
+	}
+	function Left(e) {
+		var Url = "http://192.168.0.13:8060/keypress/left";
+		var xhr = new XMLHttpRequest();
+		xhr.open('POST', Url, true);
+		xhr.send();
+	}
+	function Right(e) {
+		var Url = "http://192.168.0.13:8060/keypress/right";
+		var xhr = new XMLHttpRequest();
+		xhr.open('POST', Url, true);
+		xhr.send();
+	}
+	function Up(e) {
+		var Url = "http://192.168.0.13:8060/keypress/up";
+		var xhr = new XMLHttpRequest();
+		xhr.open('POST', Url, true);
+		xhr.send();
+	}
+	function Down(e) {
+		var Url = "http://192.168.0.13:8060/keypress/down";
+		var xhr = new XMLHttpRequest();
+		xhr.open('POST', Url, true);
+		xhr.send();
+	}
+	function Home(e) {
+		var Url = "http://192.168.0.13:8060/keypress/home";
+		var xhr = new XMLHttpRequest();
+		xhr.open('POST', Url, true);
+		xhr.send();
+	}
+	</script>
+</head>
+<body>
+
+<center>
+<style>
+h1 {
+	position:absolute;
+	left:500px;
+	top:250px;
+}
+h2 {
+	position:absolute;
+	left:400px;
+	top:250px;
+}
+h3 {
+	position:absolute;
+	left:600px;
+	top:250px;
+}
+h4 {
+	position:absolute;
+	left:500px;
+	top:150px;
+}
+h5 {
+	position:absolute;
+	left:500px;
+	top:350px;
+}
+h6 {
+	position:absolute;
+	left:500px;
+	top:0px;
+}
+</style>
+<h1>
+	<button onclick="Select()">SELECT</button>
+</h1>
+<h2>
+	<button onclick="Left()">LEFT</button>
+</h2>
+<h3>
+	<button onclick="Right()">RIGHT</button>
+</h3>
+<h4>
+	<button onclick="Up()">UP</button>
+</h4>
+<h5>
+	<button onclick="Down()">DOWN</button>
+</h5>
+<h6>
+	<button onclick="Home()">HOME</button>
+</h6>
+<center>
+</body>
+</html>
