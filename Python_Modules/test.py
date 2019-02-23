@@ -12,7 +12,7 @@ for line in lines:
         ip_address = line[line.find("inet")+4:line.find("netmask")].strip()
         netmask    = line[line.find("netmask")+7:line.find("broadcast")].strip()
 
-os.system("sudo nmap -sn 192.168.0.0/24 >> new_output.txt")
+os.system("sudo nmap -sn 192.168.0.0/24 >> new_output.txt") #Pipes Local Area search results to file for Python script analysis
 file = open("new_output.txt", "r")
 lines = file.readlines()
 file.close()
