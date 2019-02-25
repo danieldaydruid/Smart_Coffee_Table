@@ -410,7 +410,7 @@ html {
 		var xhr = new XMLHttpRequest();
 
 		var i;
-		var j;
+		var j; 
 		for(i = 0; i < 256; i++) {
 			for(j = 1; j < 256; j++) { //Setting to 1 because this is 0 is unusable
 				var Url = "http://192.168." + String(i) + "." + String(j) + ":8060/keypress/Select";
