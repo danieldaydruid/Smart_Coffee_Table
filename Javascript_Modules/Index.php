@@ -404,14 +404,9 @@ html {
   </div>
 
 <script type="text/javascript">
-       /* window.onload = function() {
-	  yourFunction(param1, param2);
-	}; This could work for page loading.... */
-	var FirstField;
+	/*var FirstField;
 	var SecondField;
 	window.onload = function() {
-		var first_field = 0;
-		var second_field = 0;
 		var xhr = new XMLHttpRequest();
 
 		var i;
@@ -428,7 +423,7 @@ html {
 				}
 			}
 		}
-	}
+	}*/
 	function Select(e) {
 		//var Url = "http://192.168." + String(FirstField) + "." + String(SecondField) + ":8060/keypress/Select";
 		var Url = "http://192.168.0.13:8060/keypress/Select";
