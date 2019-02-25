@@ -406,7 +406,7 @@ html {
 <script type="text/javascript">
 	/*var FirstField;
 	var SecondField;
-	window.onload = function() {
+	window.onload = function() { 
 		var xhr = new XMLHttpRequest();
 
 		var i;
