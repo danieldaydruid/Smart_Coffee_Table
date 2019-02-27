@@ -6,7 +6,7 @@
 * {
   box-sizing: border-box;
 }
-/*  https://www.bestcssbuttongenerator.com/#/29  */
+
 .row::after {
   content: "";
   clear: both;
@@ -404,28 +404,8 @@ html {
   </div>
 
 <script type="text/javascript">
-	/*var FirstField;
-	var SecondField;
-	window.onload = function() { 
-		var xhr = new XMLHttpRequest();
-
-		var i;
-		var j; 
-		for(i = 0; i < 256; i++) {
-			for(j = 1; j < 256; j++) { //Setting to 1 because this is 0 is unusable
-				var Url = "http://192.168." + String(i) + "." + String(j) + ":8060/keypress/Select";
-				xhr.open('POST', Url, true); 
-				xhr.send();
-				if(xhr.status() > 0) {
-					FirstField = i;
-					SecondField = j;
-					return;
-				}
-			}
-		}
-	}*/
+	/* */
 	function Select(e) {
-		//var Url = "http://192.168." + String(FirstField) + "." + String(SecondField) + ":8060/keypress/Select";
 		var Url = "http://192.168.0.13:8060/keypress/Select";
 		var xhr = new XMLHttpRequest();
 		xhr.open('POST', Url, true);
@@ -448,6 +428,7 @@ html {
 		var xhr = new XMLHttpRequest();
 		xhr.open('POST', Url, true);
 		xhr.send();
+		console.log(xhr.status);
 	}
 	function Down(e) {
 		var Url = "http://192.168.0.13:8060/keypress/down";
